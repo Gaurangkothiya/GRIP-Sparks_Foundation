@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            background-image: url('https://image.freepik.com/free-photo/stock-market-forex-trading-graph-graphic-double-exposure_73426-193.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #firstBitch {
+            display: inline-block;
+            width: 700px;
+            margin: 50px 50px 50px 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card" id='firstBitch'>
+        <div class='card-header text-center'>
+            <h1> Basic Banking System </h1>
+        </div>
+
+        <div class='card-body'>
+            <br>
+            <h3>Login as Banker</h3>
+            <br>
+            <form action="valid.php" class="needs-validation" method='POST' novalidate>
+                <div class="form-group">
+                    <label for="uname">Username or Email:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"
+                        required>
+                </div>
+
+                <button type="submit" name='submit' class="btn btn-success btn-block">Submit</button>
+            </form>
+
+            <script>
+                (function () {
+                    'use strict';
+                    window.addEventListener('load', function () {
+                        var forms = document.getElementsByClassName('needs-validation');
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        });
+                    }, false);
+                })();
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
