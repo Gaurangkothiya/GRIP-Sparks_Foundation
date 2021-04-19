@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            background-image: url('https://image.freepik.com/free-photo/stock-market-forex-trading-graph-graphic-double-exposure_73426-193.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #firstBitch {
+            display: inline-block;
+            width: 700px;
+            margin: 50px 50px 50px 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card" id='firstBitch'>
+        <div class='card-header text-center'>
+            <h1> Basic Banking System </h1>
+        </div>
+
+        <div class='card-body'>
+            <br>
+            <button type="button" class="btn btn-info btn-block" id="viewCustomer">View All Customers</button><br>
+            <button type="button" class="btn btn-info btn-block" id="viewTransfer">View All Previous
+                Transfers</button><br>
+            <button type="button" class="btn btn-success btn-block" id="newTransfer"> Perform New Transfer </button><br>
+
+            <div class="card-footer"> <button type="button" class="btn btn-primary" id="backHome"> Log Out</button>
+            </div>
+            <script type="text/javascript">
+                document.getElementById("backHome").onclick = function () {
+                    location.href = "index.html";
+                }
+                document.getElementById("viewCustomer").onclick = function () {
+                    location.href = "viewCustomer.php";
+                }
+                document.getElementById("viewTransfer").onclick = function () {
+                    location.href = "viewTransfer.php";
+                }
+                document.getElementById("newTransfer").onclick = function () {
+                    location.href = "newTransfer.php";
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>
