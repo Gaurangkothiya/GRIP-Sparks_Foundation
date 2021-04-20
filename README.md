@@ -1,4 +1,4 @@
-# GRIP-Sparks_Foundation
+# GRIP-The_Sparks_Foundation
 
 Web-development tasks performed under The Sparks foundation Internship
 
